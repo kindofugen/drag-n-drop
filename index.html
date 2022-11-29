@@ -11,21 +11,31 @@
 <body>
   <div>
     <div class="row">
-      <div class="col-header start">Start</div>
-      <div class="col-header progress">In progress</div>
-      <div class="col-header done">Done</div>
-    </div>
-
-    <div class="row">
-      <div class="placeholder startposition">
-        <div class="item purple" draggable="true">Pull me</div>
+      <div class="col-header column start">
+        <div class="col-title">Start</div>
+        <button class="add-item" type="button">+ Add</button>
+        <div class="item" draggable="true">
+          <div class="item-text">I'm here for an example <span class="close">&times;</span></div>
+        </div>
       </div>
-      <div class="placeholder progposition"></div>
-      <div class="placeholder doneposition"></div>
+      <div class="col-header column progress">
+        <div class="col-title">In Progress</div>
+      </div>
+      <div class="col-header column done">
+        <div class="col-title">Done</div>
+      </div>
     </div>
-
-  </div>
-  <script src="app.js"></script>
+    <div class="popup">
+      <div class="popup-body">
+        <div class="popup-content">
+          <div class="popup-close">X</div>
+          <div class="popup-title">Add new task</div>
+          <input type="text" class="popup-input" placeholder="what am i should do?" value="">
+          <div class="confirm">Confirm</div>
+        </div>
+      </div>
+    </div>
+  <script src="./app.js"></script>
 </body>
 
 </html>
